@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY = "pk_test_c3Rhci1iYXQtMjYuY2xlcmsuYWNjb3VudHMuZGV2JA"
+  CLERK_SECRET_KEY                  = "sk_test_E7cxaSLg7BhYOhxuUVcFbBIyd6VgqwiSCdFyAJmQic"
+  NEXT_PUBLIC_CLERK_SIGN_IN_URL     = "/sign-in"
+  NEXT_PUBLIC_CLERK_SIGN_UP_URL     = "/sign-up"
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL = "/dashboard"
+  NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL = "/dashboard"
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
